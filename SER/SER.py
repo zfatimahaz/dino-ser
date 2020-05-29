@@ -40,7 +40,7 @@ emotions = {
     '08': 'surprised'
 }
 
-observed_emotions = ['calm', 'happy', 'fearful', 'disgust']
+observed_emotions = ['neutral', 'happy', 'sad', 'angry']
 
 
 def load_data(test_size=0.2):
