@@ -98,9 +98,9 @@ model = MLPClassifier(alpha=0.001,
 #       --> mean(78.57%, 76.19%, 76.19%, 80.95%, 79.17%) = 78.214%
 
 
-model.fit(x_train, y_train)       # train data
+model.fit(x_train, y_train)  # train data
 y_pred = model.predict(x_test)
 accuracy = accuracy_score(y_true=y_test, y_pred=y_pred)
 print("Accuracy: {:.2f}%".format(accuracy * 100))
-if accuracy > 0.75:
-  pickle.dump(model, open("Speech_emotion_recognition.model", "wb"))
+if accuracy > 0.8:
+    pickle.dump(model, open("Speech_emotion_recognition.model", "wb"))
