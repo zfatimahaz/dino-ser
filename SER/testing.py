@@ -21,3 +21,4 @@ def prediction(filename):
 
 
 print(prediction('testfile.wav'))
+print(prediction('testfile2.wav'))
